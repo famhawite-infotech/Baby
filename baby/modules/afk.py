@@ -6,10 +6,10 @@ from telegram import MessageEntity, ParseMode
 from telegram.error import BadRequest
 from telegram.ext import Filters, MessageHandler, run_async
 
-from miley import dispatcher
-from miley.modules.disable import DisableAbleCommandHandler, DisableAbleRegexHandler
-from miley.modules.sql import afk_sql as sql
-from miley.modules.users import get_user_id
+from baby import dispatcher
+from baby.modules.disable import DisableAbleCommandHandler, DisableAbleRegexHandler
+from baby.modules.sql import afk_sql as sql
+from baby.modules.users import get_user_id
 
 
 AFK_GROUP = 7
