@@ -1,4 +1,4 @@
-from miley import LOAD, NO_LOAD, LOGGER
+from baby import LOAD, NO_LOAD, LOGGER
 
 
 def __list_all_modules():
