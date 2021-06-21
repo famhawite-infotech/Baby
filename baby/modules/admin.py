@@ -14,12 +14,12 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, Filters, run_async
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from miley import dispatcher, WHITELIST_USERS, SUPPORT_USERS, SUDO_USERS, DEV_USERS, OWNER_ID, TOKEN
-from miley.__main__ import IMPORTED, HELPABLE, MIGRATEABLE, STATS, USER_INFO, DATA_IMPORT, DATA_EXPORT, CHAT_SETTINGS, USER_SETTINGS 
-from miley.modules.disable import DisableAbleCommandHandler
-from miley.modules.log_channel import loggable, gloggable
-from miley.modules.helper_funcs.chat_status import bot_admin, can_promote, user_admin, can_pin, sudo_plus, dev_plus, connection_status
-from miley.modules.helper_funcs.extraction import extract_user, extract_user_and_text
+from baby import dispatcher, WHITELIST_USERS, SUPPORT_USERS, SUDO_USERS, DEV_USERS, OWNER_ID, TOKEN
+from baby.__main__ import IMPORTED, HELPABLE, MIGRATEABLE, STATS, USER_INFO, DATA_IMPORT, DATA_EXPORT, CHAT_SETTINGS, USER_SETTINGS 
+from baby.modules.disable import DisableAbleCommandHandler
+from baby.modules.log_channel import loggable, gloggable
+from baby.modules.helper_funcs.chat_status import bot_admin, can_promote, user_admin, can_pin, sudo_plus, dev_plus, connection_status
+from baby.modules.helper_funcs.extraction import extract_user, extract_user_and_text
 
 
 @run_async
