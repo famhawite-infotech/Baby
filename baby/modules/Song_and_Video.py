@@ -1,4 +1,4 @@
-# Thanks to @p_rinc_e
+# Thanks to @Nickylrca
 from pathlib import Path
 import asyncio, time, io, math, os, logging, asyncio, shutil, re, subprocess, json
 from re import findall
@@ -13,8 +13,8 @@ from base64 import b64decode
 from pySmartDL import SmartDL
 from telethon.tl.types import DocumentAttributeVideo, DocumentAttributeAudio
 from telethon import events
-from miley.events import register
-from miley.utils import progress
+from baby.events import register
+from baby.utils import progress
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 from validators.url import url
