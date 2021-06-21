@@ -83,7 +83,7 @@ if ENV:
     TELETHON_HASH = os.environ.get("TL_HASH", None)
     
 else:
-    from miley.config import Development as Config
+    from baby.config import Development as Config
     TOKEN = Config.API_KEY
 
     try:
@@ -151,7 +151,7 @@ SUDO_USERS.add(1188384442)
 # Telethon
 api_id = TELETHON_ID
 api_hash = TELETHON_HASH
-client = TelegramClient("miley", api_id, api_hash)
+client = TelegramClient("baby", api_id, api_hash)
 
 updater = tg.Updater(TOKEN, workers=WORKERS)
 dispatcher = updater.dispatcher
