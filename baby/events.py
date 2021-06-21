@@ -1,5 +1,5 @@
 from telethon import events
-from miley import client
+from baby import client
 
 
 def register(**args):
