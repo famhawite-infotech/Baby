@@ -6,10 +6,10 @@ from telegram.error import BadRequest
 from telegram.ext import Filters, MessageHandler, CommandHandler, run_async
 from telegram.utils.helpers import mention_html
 
-from miley import dispatcher
-from miley.modules.helper_funcs.chat_status import is_user_admin, user_admin, can_restrict, can_delete
-from miley.modules.log_channel import loggable
-from miley.modules.sql import antiflood_sql as sql
+from baby import dispatcher
+from baby.modules.helper_funcs.chat_status import is_user_admin, user_admin, can_restrict, can_delete
+from baby.modules.log_channel import loggable
+from baby.modules.sql import antiflood_sql as sql
 
 FLOOD_GROUP = 3
 
