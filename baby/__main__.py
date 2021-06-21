@@ -18,20 +18,20 @@ from telegram.error import Unauthorized, BadRequest, TimedOut, NetworkError, Cha
 from telegram.ext import CommandHandler, Filters, MessageHandler, CallbackQueryHandler
 from telegram.ext.dispatcher import run_async, DispatcherHandlerStop, Dispatcher
 from telegram.utils.helpers import escape_markdown
-from miley import dispatcher, updater, TOKEN, WEBHOOK, SUDO_USERS, OWNER_ID, CERT_PATH, PORT, URL, LOGGER, OWNER_NAME, ALLOW_EXCL, client
-from miley.modules import ALL_MODULES
-from miley.modules.helper_funcs.chat_status import is_user_admin
-from miley.modules.helper_funcs.misc import paginate_modules
-from miley.modules.connection import connected
-from miley.modules.connection import connect_button
+from baby import dispatcher, updater, TOKEN, WEBHOOK, SUDO_USERS, OWNER_ID, CERT_PATH, PORT, URL, LOGGER, OWNER_NAME, ALLOW_EXCL, client
+from baby.modules import ALL_MODULES
+from baby.modules.helper_funcs.chat_status import is_user_admin
+from baby.modules.helper_funcs.misc import paginate_modules
+from baby.modules.connection import connected
+from baby.modules.connection import connect_button
 
 
 PM_START_TEXT = """
 _Hello_ *{}*
 _My name is_ *{}*\n A Powerful Telegram Bot to Manage Your Groups,feel free to add to your groups!!
 
-Support Channel : *@MileyNews*
-Support Group : *@MileySupport*
+Support Channel : *@BabyNews*
+Support Group : *@BabySupport*
 
 _I'm maintained by_ [{}](tg://user?id={})
  
@@ -63,8 +63,8 @@ def vercheck() -> str:
 
 
 SOURCE_STRING = """
-🎓 I'm built in python3, using the python-telegram-bot library, and am fully opensource - you can find what makes me tick [here](https://github.com/MysteryxD/MileyBot)
-☄ You Can Clone Me [Here](https://heroku.com/deploy?template=https://github.com/MysteryxD/MileyBot.git)
+🎓 I'm built in python3, using the python-telegram-bot library, and am fully opensource - you can find what makes me tick [here](https://github.com/famhawite-infotech/Baby)
+☄ You Can Clone Me [Here](https://heroku.com/deploy?template=https://github.com/famhawite-infotech/Baby.git)
 """
 
 
@@ -184,7 +184,7 @@ def send_start(bot, update):
     first_name = update.effective_user.first_name 
     text = PM_START_TEXT
 
-    keyboard = [[InlineKeyboardButton(text="🤝Help",callback_data="help_back"),InlineKeyboardButton(text="🔥Creator🔥",url="https://t.me/MysteryxD")]]
+    keyboard = [[InlineKeyboardButton(text="🤝Help",callback_data="help_back"),InlineKeyboardButton(text="🔥Creator🔥",url="https://t.me/Nickylrca")]]
     keyboard += [[InlineKeyboardButton(text="🌐Connect Group", callback_data="main_connect"),InlineKeyboardButton(text="✳ Add Me ✳",url="t.me/{}?startgroup=true".format(bot.username))]]
 
     update.effective_message.reply_photo(img, PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_NAME, OWNER_ID), 
