@@ -1,5 +1,5 @@
 ### [@MissMiley_bot](http://www.telegram.dog/MissMiley_bot)
-> with HunterxHunter theme.
+> By, Famhawite Infotech.
 
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)  
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
@@ -7,14 +7,14 @@
 Modular Telegram bot for managing your groups with a extras features with HunterxHunter theme.
 
 ### Click Below Image to Deploy
-[![Deploy](https://telegra.ph/file/038200c811cff976f484e.jpg)](https://heroku.com/deploy?template=https://github.com/MysteryxD/MileyBot.git)
+[![Deploy](https://telegra.ph/file/038200c811cff976f484e.jpg)](https://heroku.com/deploy?template=https://github.com/famhawite-infotech/Baby.git)
 
 ### Configuration
 
 There are two possible ways of configuring your bot: a config.py file, or ENV variables.
 
 The prefered version is to use a `config.py` file, as it makes it easier to see all your settings grouped together.
-This file should be placed in your `miley` folder, alongside the `__main__.py` file . 
+This file should be placed in your `baby` folder, alongside the `__main__.py` file . 
 This is where your bot token will be loaded from, as well as your database URI (if you're using a database), and most of 
 your other settings.
 
@@ -28,7 +28,7 @@ from miley.sample_config import Config
 
 class Development(Config):
     OWNER_ID = 1188384442  # my telegram ID
-    OWNER_USERNAME = "MysteryxD"  # my telegram username
+    OWNER_USERNAME = "famhawite-infotech"  # my telegram username
     API_KEY = "your bot api key"  # my api key, as provided by the botfather
     SQLALCHEMY_DATABASE_URI = 'postgresql://username:password@localhost:5432/database'  # sample db credentials
     MESSAGE_DUMP = '-1001375770539' # some group chat that your bot is a member of
