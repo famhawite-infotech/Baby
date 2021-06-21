@@ -62,7 +62,7 @@
       },
       "OWNER_NAME": {
          "description": "Your Name",
-         "value": "✪ Mყʂƚҽɾყ Bσყ 🇮🇳✰"
+         "value": "✪ Miss Baby✰"
       },
       "DEV_USERS": {
          "description": "ID of users who are Dev (can use /py etc.)",
@@ -162,8 +162,8 @@
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
     }
   ],
-   "name": "Miley",
-   "repository": "https://github.com/MysteryxD/MileyBot",
-   "success_url": "https://telegram.dog/MissMiley_bot",
+   "name": "Baby",
+   "repository": "https://github.com/famhawite-infotech/Baby",
+   "success_url": "https://telegram.dog/babybot",
    "logo": "https://telegra.ph/file/038200c811cff976f484e.jpg"
 }
