@@ -1,4 +1,4 @@
-from miley import dispatcher, LOGGER
+from baby import dispatcher, LOGGER
 from telegram import Bot, Update
 from telegram.ext.dispatcher import run_async
 from baby.modules.helper_funcs.misc import sendMessage
