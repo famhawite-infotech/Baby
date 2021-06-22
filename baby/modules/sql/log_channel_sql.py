@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, String, func, distinct
 
-from miley.modules.sql import BASE, SESSION
+from baby.modules.sql import BASE, SESSION
 
 
 class GroupLogs(BASE):
