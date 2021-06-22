@@ -9,13 +9,13 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-import miley.modules.sql.locks_sql as sql
-from miley import dispatcher, SUDO_USERS, DEV_USERS, LOGGER
-from miley.modules.disable import DisableAbleCommandHandler
-from miley.modules.helper_funcs.chat_status import can_delete, is_user_admin, user_not_admin, user_admin, bot_can_delete, is_bot_admin, connection_status
-from miley.modules.helper_funcs.filters import CustomFilters
-from miley.modules.log_channel import loggable
-from miley.modules.sql import users_sql
+import baby.modules.sql.locks_sql as sql
+from baby import dispatcher, SUDO_USERS, DEV_USERS, LOGGER
+from baby.modules.disable import DisableAbleCommandHandler
+from baby.modules.helper_funcs.chat_status import can_delete, is_user_admin, user_not_admin, user_admin, bot_can_delete, is_bot_admin, connection_status
+from baby.modules.helper_funcs.filters import CustomFilters
+from baby.modules.log_channel import loggable
+from baby.modules.sql import users_sql
 
 LOCK_TYPES = {
     'sticker': Filters.sticker,
