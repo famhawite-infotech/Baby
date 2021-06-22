@@ -1,4 +1,4 @@
-from miley import client, SUDO_USERS, WHITELIST_USERS
+from baby import client, SUDO_USERS, WHITELIST_USERS
 from telethon import functions, types
 from telethon.tl.types import ChannelParticipantsAdmins
 
