@@ -7,13 +7,13 @@ from telegram import Bot, Update, ParseMode
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 
-import miley.modules.sql.blacklist_sql as sql
+import baby.modules.sql.blacklist_sql as sql
 
-from miley import dispatcher, LOGGER
-from miley.modules.disable import DisableAbleCommandHandler
-from miley.modules.helper_funcs.chat_status import user_admin, user_not_admin, connection_status
-from miley.modules.helper_funcs.extraction import extract_text
-from miley.modules.helper_funcs.misc import split_message
+from baby import dispatcher, LOGGER
+from baby.modules.disable import DisableAbleCommandHandler
+from baby.modules.helper_funcs.chat_status import user_admin, user_not_admin, connection_status
+from baby.modules.helper_funcs.extraction import extract_text
+from baby.modules.helper_funcs.misc import split_message
 
 BLACKLIST_GROUP = 11
 
