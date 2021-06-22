@@ -1,8 +1,8 @@
 import random
 from telegram.ext import run_async, Filters
 from telegram import Message, Chat, Update, Bot, MessageEntity
-from miley import dispatcher
-from miley.modules.disable import DisableAbleCommandHandler
+from baby import dispatcher
+from baby.modules.disable import DisableAbleCommandHandler
 
 ABUSE_STRINGS = (
     "പോടാ പട്ടി",
@@ -92,10 +92,6 @@ def sing(bot: Bot, update: Update):
     else:
       message.reply_text(random.choice(SONG_STRINGS))
 
-__help__ = """
-- /abuse : Abuse someone in malayalam.
-- /sing : First lines of some random malayalam Songs.
-"""
 
 __mod_name__ = "Extras"
 
