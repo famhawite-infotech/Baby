@@ -9,16 +9,16 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async, DispatcherHandlerStop, MessageHandler, Filters, CallbackQueryHandler
 from telegram.utils.helpers import mention_html
 
-from miley import dispatcher, BAN_STICKER
-from miley.modules.disable import DisableAbleCommandHandler
-from miley.modules.helper_funcs.chat_status import (is_user_admin, bot_admin, user_admin_no_reply, user_admin,
+from baby import dispatcher, BAN_STICKER
+from baby.modules.disable import DisableAbleCommandHandler
+from baby.modules.helper_funcs.chat_status import (is_user_admin, bot_admin, user_admin_no_reply, user_admin,
                                                      can_restrict)
-from miley.modules.helper_funcs.extraction import extract_text, extract_user_and_text, extract_user
-from miley.modules.helper_funcs.filters import CustomFilters
-from miley.modules.helper_funcs.misc import split_message
-from miley.modules.helper_funcs.string_handling import split_quotes
-from miley.modules.log_channel import loggable
-from miley.modules.sql import warns_sql as sql
+from baby.modules.helper_funcs.extraction import extract_text, extract_user_and_text, extract_user
+from baby.modules.helper_funcs.filters import CustomFilters
+from baby.modules.helper_funcs.misc import split_message
+from baby.modules.helper_funcs.string_handling import split_quotes
+from baby.modules.log_channel import loggable
+from baby.modules.sql import warns_sql as sql
 
 WARN_HANDLER_GROUP = 9
 CURRENT_WARNING_FILTER_STRING = "<b>Current warning filters in this chat:</b>\n"
