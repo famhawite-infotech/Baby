@@ -8,9 +8,9 @@ from coffeehouse.exception import CoffeeHouseError as CFError
 from telegram import Message, Chat, User, Update, Bot
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 
-from miley import dispatcher, LYDIA_API, OWNER_ID
-import miley.modules.sql.lydia_sql as sql
-from miley.modules.helper_funcs.filters import CustomFilters
+from baby import dispatcher, LYDIA_API, OWNER_ID
+import baby.modules.sql.lydia_sql as sql
+from baby.modules.helper_funcs.filters import CustomFilters
 
 
 CoffeeHouseAPI = API(LYDIA_API)
