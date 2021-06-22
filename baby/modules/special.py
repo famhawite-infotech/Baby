@@ -10,11 +10,11 @@ from telegram.ext import MessageHandler, Filters, CommandHandler
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import escape_markdown
 from html import escape
-from miley.modules.helper_funcs.chat_status import is_user_ban_protected, bot_admin
+from baby.modules.helper_funcs.chat_status import is_user_ban_protected, bot_admin
 
-import miley.modules.sql.users_sql as sql
-from miley import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, LOGGER
-from miley.modules.helper_funcs.filters import CustomFilters
+import baby.modules.sql.users_sql as sql
+from baby import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, LOGGER
+from baby.modules.helper_funcs.filters import CustomFilters
 
 USERS_GROUP = 4
 
