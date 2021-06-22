@@ -7,9 +7,9 @@ from telegram.error import BadRequest, Unauthorized, RetryAfter
 from telegram.ext import CommandHandler, Filters
 from telegram.ext.dispatcher import run_async
 
-from miley import dispatcher, OWNER_ID
-from miley.modules.sql.users_sql import get_user_com_chats
-from miley.modules.helper_funcs.extraction import extract_user
+from baby import dispatcher, OWNER_ID
+from baby.modules.sql.users_sql import get_user_com_chats
+from baby.modules.helper_funcs.extraction import extract_user
 
 
 @run_async
