@@ -2,7 +2,7 @@ import re
 import urllib.parse
 import json
 import requests
-from miley import dispatcher
+from baby import dispatcher
 from os import popen
 from random import choice
 from bs4 import BeautifulSoup
