@@ -3,8 +3,8 @@ import threading
 from sqlalchemy import Column, String, UnicodeText, func, distinct, Integer, Boolean
 from telegram.error import BadRequest, TelegramError, Unauthorized
 
-from miley import dispatcher
-from miley.modules.sql import SESSION, BASE
+from baby import dispatcher
+from baby.modules.sql import SESSION, BASE
 
 
 class Federations(BASE):
