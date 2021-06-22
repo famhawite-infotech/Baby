@@ -6,9 +6,9 @@ from telegram import Bot, Update, ParseMode
 from telegram.ext import CommandHandler, RegexHandler, MessageHandler
 from telegram.utils.helpers import escape_markdown
 
-from miley import dispatcher
-from miley.modules.helper_funcs.handlers import CMD_STARTERS, CustomCommandHandler
-from miley.modules.helper_funcs.misc import is_module_loaded
+from baby import dispatcher
+from baby.modules.helper_funcs.handlers import CMD_STARTERS, CustomCommandHandler
+from baby.modules.helper_funcs.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
