@@ -4,8 +4,8 @@ from googletrans import Translator, LANGUAGES
 from telegram import Bot, Update, ParseMode
 from telegram.ext import run_async
 
-from miley import dispatcher
-from miley.modules.disable import DisableAbleCommandHandler
+from baby import dispatcher
+from baby.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
