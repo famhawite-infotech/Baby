@@ -2,8 +2,8 @@ from typing import List
 import requests
 from telegram import Message, Update, Bot, MessageEntity
 from telegram.ext import CommandHandler, run_async
-from miley import dispatcher
-from miley.modules.disable import DisableAbleCommandHandler
+from baby import dispatcher
+from baby.modules.disable import DisableAbleCommandHandler
 import pynewtonmath as newton
 import math
 
