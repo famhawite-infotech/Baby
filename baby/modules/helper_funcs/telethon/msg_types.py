@@ -4,7 +4,7 @@ import re
 from enum import IntEnum, unique
 
 from telethon import utils
-from miley.modules.helper_funcs.string_handler import message_parser
+from baby.modules.helper_funcs.string_handler import message_parser
 
 NOTE_REGEX = re.compile(r"(^\S+|^\".*\")(?: |$)")
 
