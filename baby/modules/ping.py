@@ -13,8 +13,8 @@ from telegram.ext import CommandHandler, run_async, Filters
 from telegram import Update, Bot
 from telegram.ext import run_async
 
-from miley.modules.disable import DisableAbleCommandHandler
-from miley import dispatcher, StartTime
+from baby.modules.disable import DisableAbleCommandHandler
+from baby import dispatcher, StartTime
 
 from requests import get
 
