@@ -3,8 +3,8 @@ import random
 from telegram import Bot, Update
 from telegram.ext import run_async
 
-from miley import dispatcher
-from miley.modules.disable import DisableAbleCommandHandler
+from baby import dispatcher
+from baby.modules.disable import DisableAbleCommandHandler
 
 
 reactions = [
