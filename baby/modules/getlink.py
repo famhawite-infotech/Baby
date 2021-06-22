@@ -4,10 +4,10 @@ from telegram import Update, Bot, Chat, Message, User
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, Filters
 from telegram.ext.dispatcher import run_async
-from miley.modules.helper_funcs.chat_status import bot_admin
-from miley.modules.helper_funcs.filters import CustomFilters
+from baby.modules.helper_funcs.chat_status import bot_admin
+from baby.modules.helper_funcs.filters import CustomFilters
 
-from miley import dispatcher
+from baby import dispatcher
 import random, re
 
 @run_async
