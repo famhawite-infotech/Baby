@@ -1,8 +1,8 @@
 from telegram import Update, Bot, ParseMode
 from telegram.ext import run_async
 
-from miley.modules.disable import DisableAbleCommandHandler
-from miley import dispatcher
+from baby.modules.disable import DisableAbleCommandHandler
+from baby import dispatcher
 
 from requests import get
 
