@@ -14,14 +14,14 @@ from telegram import Message, Chat, Update, Bot, MessageEntity
 from telegram import ParseMode
 from telegram.ext import CommandHandler, run_async, Filters
 from telegram.utils.helpers import escape_markdown, mention_html
-from miley.modules.helper_funcs.chat_status import user_admin, sudo_plus, is_user_admin
-from miley import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, DEV_USERS, WHITELIST_USERS
-from miley.__main__ import STATS, USER_INFO, TOKEN
-from miley.modules.disable import DisableAbleCommandHandler, DisableAbleRegexHandler
-from miley.modules.helper_funcs.extraction import extract_user
-from miley.modules.helper_funcs.filters import CustomFilters
-import miley.modules.sql.users_sql as sql
-import miley.modules.helper_funcs.cas_api as cas
+from baby.modules.helper_funcs.chat_status import user_admin, sudo_plus, is_user_admin
+from baby import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, DEV_USERS, WHITELIST_USERS
+from baby.__main__ import STATS, USER_INFO, TOKEN
+from baby.modules.disable import DisableAbleCommandHandler, DisableAbleRegexHandler
+from baby.modules.helper_funcs.extraction import extract_user
+from baby.modules.helper_funcs.filters import CustomFilters
+import baby.modules.sql.users_sql as sql
+import baby.modules.helper_funcs.cas_api as cas
 
 @run_async
 def info(bot: Bot, update: Update, args: List[str]):
