@@ -12,10 +12,10 @@ from telegram import Message, Chat, Update, Bot, MessageEntity
 from telegram import ParseMode
 from telegram.ext import CommandHandler, run_async, Filters
 from telegram.utils.helpers import escape_markdown, mention_html
-from miley import dispatcher
-from miley.__main__ import STATS
-from miley.modules.disable import DisableAbleCommandHandler
-from miley.modules.helper_funcs.extraction import extract_user
+from baby import dispatcher
+from baby.__main__ import STATS
+from baby.modules.disable import DisableAbleCommandHandler
+from baby.modules.helper_funcs.extraction import extract_user
 
 def tts(bot: Bot, update: Update, args):
     current_time = datetime.strftime(datetime.now(), "%d.%m.%Y %H:%M:%S")
