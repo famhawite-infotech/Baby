@@ -9,8 +9,8 @@ from telegram import Message, Chat, Update, Bot, MessageEntity, ParseMode
 from telegram.ext import CommandHandler, run_async, Filters
 from telegram.utils.helpers import escape_markdown
 
-from miley import dispatcher
-from miley.modules.disable import DisableAbleCommandHandler
+from baby import dispatcher
+from baby.modules.disable import DisableAbleCommandHandler
 
 BASE_URL = 'https://del.dog'
 
