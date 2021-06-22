@@ -8,9 +8,9 @@ from telegram.ext import Updater, CommandHandler, run_async
 
 from telegram.error import TimedOut, NetworkError
 
-from miley import dispatcher, LOGGER
-from miley.modules.disable import DisableAbleCommandHandler
-from miley.modules.helper_funcs.chat_status import bot_admin, can_promote, user_admin, can_pin, dev_plus
+from baby import dispatcher, LOGGER
+from baby.modules.disable import DisableAbleCommandHandler
+from baby.modules.helper_funcs.chat_status import bot_admin, can_promote, user_admin, can_pin, dev_plus
 
 from requests import get
 
