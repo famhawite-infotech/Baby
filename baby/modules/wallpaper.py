@@ -7,8 +7,8 @@ from time import sleep
 from telegram import Message, Chat, Update, Bot
 from telegram.ext import run_async
 
-from miley import dispatcher,WALL_API
-from miley.modules.disable import DisableAbleCommandHandler
+from baby import dispatcher,WALL_API
+from baby.modules.disable import DisableAbleCommandHandler
 
 
 
