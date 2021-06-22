@@ -7,21 +7,21 @@ from telegram import Message, Chat, Update, Bot
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async, Filters
 
-import miley.modules.sql.notes_sql as sql
-from miley import dispatcher, LOGGER, OWNER_ID, SUDO_USERS, MESSAGE_DUMP
-from miley.__main__ import DATA_IMPORT
-from miley.modules.helper_funcs.chat_status import user_admin
-from miley.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from miley.modules.helper_funcs.msg_types import get_note_type
-from miley.modules.rules import get_rules
-import miley.modules.sql.rules_sql as rulessql
-from miley.modules.sql import warns_sql as warnssql
-import miley.modules.sql.blacklist_sql as blacklistsql
-from miley.modules.sql import disable_sql as disabledsql
-from miley.modules.sql import cust_filters_sql as filtersql
-import miley.modules.sql.welcome_sql as welcsql
-import miley.modules.sql.locks_sql as locksql
-from miley.modules.connection import connected
+import baby.modules.sql.notes_sql as sql
+from baby import dispatcher, LOGGER, OWNER_ID, SUDO_USERS, MESSAGE_DUMP
+from baby.__main__ import DATA_IMPORT
+from baby.modules.helper_funcs.chat_status import user_admin
+from baby.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from baby.modules.helper_funcs.msg_types import get_note_type
+from baby.modules.rules import get_rules
+import baby.modules.sql.rules_sql as rulessql
+from baby.modules.sql import warns_sql as warnssql
+import baby.modules.sql.blacklist_sql as blacklistsql
+from baby.modules.sql import disable_sql as disabledsql
+from baby.modules.sql import cust_filters_sql as filtersql
+import baby.modules.sql.welcome_sql as welcsql
+import baby.modules.sql.locks_sql as locksql
+from baby.modules.connection import connected
 
 @run_async
 @user_admin
