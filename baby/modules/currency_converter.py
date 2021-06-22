@@ -3,7 +3,7 @@ import requests
 from telegram import Bot, Update
 from telegram.ext import CommandHandler, run_async
 
-from miley import dispatcher, CASH_API_KEY
+from baby import dispatcher, CASH_API_KEY
 
 
 @run_async
