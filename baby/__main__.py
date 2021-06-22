@@ -606,7 +606,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Miley running...")
+        LOGGER.info("Baby running...")
         updater.start_polling(timeout=15, read_latency=4)
         client.run_until_disconnected()
 
