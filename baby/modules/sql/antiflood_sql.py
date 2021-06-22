@@ -1,7 +1,7 @@
 import threading
 
 from sqlalchemy import Column, Integer, String, Boolean
-from miley.modules.sql import BASE, SESSION
+from baby.modules.sql import BASE, SESSION
 
 DEF_COUNT = 0
 DEF_LIMIT = 0
