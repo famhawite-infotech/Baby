@@ -5,9 +5,9 @@ from feedparser import parse
 from telegram import ParseMode, constants
 from telegram.ext import CommandHandler
 
-from miley import dispatcher, updater
-from miley.modules.helper_funcs.chat_status import user_admin
-from miley.modules.sql import rss_sql as sql
+from baby import dispatcher, updater
+from baby.modules.helper_funcs.chat_status import user_admin
+from baby.modules.sql import rss_sql as sql
 
 
 def show_url(bot, update, args):
