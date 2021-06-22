@@ -9,19 +9,19 @@ from telegram.ext import CommandHandler, MessageHandler, Filters
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import mention_html, mention_markdown
 
-import miley.modules.sql.blsticker_sql as sql
-from miley import dispatcher, SUDO_USERS, LOGGER, OWNER_ID
-from miley.modules.disable import DisableAbleCommandHandler
-from miley.modules.helper_funcs.chat_status import can_delete, is_user_admin, user_not_admin, user_admin, \
+import baby.modules.sql.blsticker_sql as sql
+from baby import dispatcher, SUDO_USERS, LOGGER, OWNER_ID
+from baby.modules.disable import DisableAbleCommandHandler
+from baby.modules.helper_funcs.chat_status import can_delete, is_user_admin, user_not_admin, user_admin, \
 		bot_can_delete, is_bot_admin
-from miley.modules.helper_funcs.filters import CustomFilters
-from miley.modules.helper_funcs.misc import split_message
-from miley.modules.warns import warn
-from miley.modules.log_channel import loggable
-from miley.modules.sql import users_sql
-from miley.modules.connection import connected
+from baby.modules.helper_funcs.filters import CustomFilters
+from baby.modules.helper_funcs.misc import split_message
+from baby.modules.warns import warn
+from baby.modules.log_channel import loggable
+from baby.modules.sql import users_sql
+from baby.modules.connection import connected
 
-from miley.modules.helper_funcs.alternate import send_message
+from baby.modules.helper_funcs.alternate import send_message
 
 
 @run_async
