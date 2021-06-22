@@ -6,8 +6,12 @@
 
 Modular Telegram bot for managing your groups with a extras features with Many features.
 
-### Click Below Image to Deploy
-[![Deploy](https://telegra.ph/file/038200c811cff976f484e.jpg)](https://heroku.com/deploy?template=https://github.com/famhawite-infotech/Baby.git)
+
+[![Baby](https://telegra.ph/file/038200c811cff976f484e.jpg)]
+
+## Deploy to Heroku
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/famhawite-infotech/Baby) 
+
 
 ### Configuration
 
