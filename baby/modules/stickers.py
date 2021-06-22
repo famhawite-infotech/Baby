@@ -13,9 +13,9 @@ from telegram import Update, Bot
 from telegram.ext import CommandHandler, run_async
 from telegram.utils.helpers import escape_markdown
 
-from miley import dispatcher
+from baby import dispatcher
 
-from miley.modules.disable import DisableAbleCommandHandler
+from baby.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
