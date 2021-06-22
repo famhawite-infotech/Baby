@@ -4,11 +4,11 @@ from telegram import Bot, Update, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CommandHandler, CallbackQueryHandler, run_async
 
-from miley import dispatcher, OWNER_ID, DEV_USERS
-from miley.modules.helper_funcs.chat_status import dev_plus
+from baby import dispatcher, OWNER_ID, DEV_USERS
+from baby.modules.helper_funcs.chat_status import dev_plus
 
-import miley.modules.sql.users_sql as user_sql
-import miley.modules.sql.global_bans_sql as gban_sql
+import baby.modules.sql.users_sql as user_sql
+import baby.modules.sql.global_bans_sql as gban_sql
 
 
 def get_invalid_chats(bot: Bot, update: Update, remove: bool = False):
