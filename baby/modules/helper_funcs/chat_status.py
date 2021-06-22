@@ -309,5 +309,5 @@ def connection_status(func):
 
 
 #Workaround for circular import with connection.py
-from miley.modules import connection
+from baby.modules import connection
 connected = connection.connected
