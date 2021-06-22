@@ -16,28 +16,28 @@ from telegram import ParseMode, Update, Bot, Chat, User, MessageEntity, InlineKe
 from telegram.ext import run_async, CommandHandler, MessageHandler, Filters, CallbackQueryHandler
 from telegram.utils.helpers import escape_markdown, mention_html, mention_markdown
 
-from miley import dispatcher, OWNER_ID, SUDO_USERS, DEV_USERS, WHITELIST_USERS, LOGGER, MESSAGE_DUMP
-from miley.modules.helper_funcs.handlers import CMD_STARTERS
-from miley.modules.helper_funcs.misc import is_module_loaded, send_to_list
-from miley.modules.helper_funcs.chat_status import is_user_admin
-from miley.modules.helper_funcs.extraction import extract_user, extract_unt_fedban, extract_user_fban
-from miley.modules.helper_funcs.string_handling import markdown_parser
-from miley.modules.disable import DisableAbleCommandHandler
+from baby import dispatcher, OWNER_ID, SUDO_USERS, DEV_USERS, WHITELIST_USERS, LOGGER, MESSAGE_DUMP
+from baby.modules.helper_funcs.handlers import CMD_STARTERS
+from baby.modules.helper_funcs.misc import is_module_loaded, send_to_list
+from baby.modules.helper_funcs.chat_status import is_user_admin
+from baby.modules.helper_funcs.extraction import extract_user, extract_unt_fedban, extract_user_fban
+from baby.modules.helper_funcs.string_handling import markdown_parser
+from baby.modules.disable import DisableAbleCommandHandler
 
-import miley.modules.sql.feds_sql as sql
+import baby.modules.sql.feds_sql as sql
 
-from miley.modules.connection import connected
-from miley.modules.helper_funcs.alternate import send_message
+from baby.modules.connection import connected
+from baby.modules.helper_funcs.alternate import send_message
 # Hello bot owner, I time spent for feds many hours of my life, Please don't remove this if you still respect MrYacha and peaktogoo and AyraHikari too
 # Federation by MrYacha
-# Federation rework by Mizukito Akito
-# Federation update v2 by Ayra Hikari
+# Federation rework by famhawite-infotech
+# Federation update v2 by Nicky Lalrochhara
 # Time time spent on feds = 10h by #MrYacha
-# Time time spent on reworking on the whole feds = 22+ hours by @peaktogoo
-# Time time spent on updating version to v2 = 26+ hours by @AyraHikari
+# Time time spent on reworking on the whole feds = 22+ hours by @nickylrca
+# Time time spent on updating version to v2 = 26+ hours by @famhawite-infotech
 # Total time spent for making this features is 68+ hours
-# LOGGER.info("Original federation module by MrYacha, reworked by Mizukito Akito (@peaktogoo) on Telegram.")
-#Further Edited by @Sur_vivor
+# LOGGER.info("Original federation module by MrYacha, reworked by Famhawite-infotech (@famhawite-infotech) on Telegram.")
+#Further Edited by @Mproject
 
 FBAN_ERRORS = {
     "User is an administrator of the chat",
@@ -1685,7 +1685,7 @@ Ah, group management. Everything is fun, until the spammer starts entering your 
 But then you have many groups, and you don't want this spammer to be in one of your groups - how can you deal? Do you have to manually block it, in all your groups?
 No longer! With Federation, you can make a ban in one chat overlap with all other chats.
 You can even designate admin federations, so your trusted admin can ban all the chats you want to protect.
-For help and updates visit @MysteryBots
+For help and updates visit @Babysupport
 Command:
  - /newfed <fedname>: Create a new Federation with the name given. Users are only allowed to have one Federation. This method can also be used to rename the Federation. (max. 64 characters)
  - /delfed: Delete your Federation, and any information related to it. Will not cancel blocked users.
