@@ -3,7 +3,7 @@ import threading
 
 from sqlalchemy import Column, String, Boolean
 
-from miley.modules.sql import SESSION, BASE
+from baby.modules.sql import SESSION, BASE
 
 
 class Permissions(BASE):
