@@ -5,10 +5,10 @@ from typing import List
 from telegram import Bot, Update, ParseMode
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 
-from miley import ALLOW_EXCL, dispatcher, CustomCommandHandler
-from miley.modules.disable import DisableAbleCommandHandler
-from miley.modules.helper_funcs.chat_status import user_admin, bot_can_delete, dev_plus, connection_status
-from miley.modules.sql import cleaner_sql as sql
+from baby import ALLOW_EXCL, dispatcher, CustomCommandHandler
+from baby.modules.disable import DisableAbleCommandHandler
+from baby.modules.helper_funcs.chat_status import user_admin, bot_can_delete, dev_plus, connection_status
+from baby.modules.sql import cleaner_sql as sql
 
 if ALLOW_EXCL:
     CMD_STARTERS = ('/', '!')
