@@ -5,11 +5,11 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 from telegram.utils.helpers import mention_html
 
-import miley.modules.sql.blacklistusers_sql as sql
-from miley import dispatcher, OWNER_ID, DEV_USERS, SUDO_USERS, WHITELIST_USERS, SUPPORT_USERS
-from miley.modules.helper_funcs.chat_status import dev_plus
-from miley.modules.helper_funcs.extraction import extract_user_and_text, extract_user
-from miley.modules.log_channel import gloggable
+import baby.modules.sql.blacklistusers_sql as sql
+from baby import dispatcher, OWNER_ID, DEV_USERS, SUDO_USERS, WHITELIST_USERS, SUPPORT_USERS
+from baby.modules.helper_funcs.chat_status import dev_plus
+from baby.modules.helper_funcs.extraction import extract_user_and_text, extract_user
+from baby.modules.log_channel import gloggable
 
 BLACKLISTWHITELIST = [OWNER_ID] + DEV_USERS + SUDO_USERS + WHITELIST_USERS + SUPPORT_USERS
 BLABLEUSERS = [OWNER_ID] + DEV_USERS
