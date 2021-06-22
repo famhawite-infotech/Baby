@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, UnicodeText, Integer, String, Boolean
 
-from miley.modules.sql import BASE, SESSION
+from baby.modules.sql import BASE, SESSION
 
 
 class GloballyBannedUsers(BASE):
