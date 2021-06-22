@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, Boolean
 
-from miley.modules.sql import BASE, SESSION
+from baby.modules.sql import BASE, SESSION
 
 
 class CleanerBlueTextChatSettings(BASE):
