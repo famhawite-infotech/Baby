@@ -60,7 +60,7 @@ def load(bot: Bot, update: Update):
     load_messasge = message.reply_text(f"Attempting to load module : <b>{text}</b>", parse_mode=ParseMode.HTML)
     
     try:
-        imported_module = importlib.import_module("miley.modules." + text)
+        imported_module = importlib.import_module("baby.modules." + text)
     except:
         load_messasge.edit_text("Does that module even exist?")
         return
