@@ -3,8 +3,8 @@ import threading
 
 from sqlalchemy import Column, String, Boolean, UnicodeText, Integer, func, distinct
 
-from miley.modules.helper_funcs.msg_types import Types
-from miley.modules.sql import SESSION, BASE
+from baby.modules.helper_funcs.msg_types import Types
+from baby.modules.sql import SESSION, BASE
 
 
 class Notes(BASE):
