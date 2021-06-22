@@ -2,27 +2,27 @@ import html, time
 import re
 from typing import Optional, List
 
-import miley.modules.helper_funcs.cas_api as cas
+import baby.modules.helper_funcs.cas_api as cas
 
 from telegram import Message, Chat, Update, Bot, User, CallbackQuery, ChatMember, ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, MessageEntity
 from telegram.error import BadRequest
 from telegram.ext import MessageHandler, Filters, CommandHandler, run_async, CallbackQueryHandler
 from telegram.utils.helpers import mention_markdown, mention_html, escape_markdown
 
-import miley.modules.sql.welcome_sql as sql
-import miley.modules.sql.global_bans_sql as gbansql
-import miley.modules.sql.users_sql as userssql
-import miley.modules.sql.feds_sql as feds_sql
+import baby.modules.sql.welcome_sql as sql
+import baby.modules.sql.global_bans_sql as gbansql
+import baby.modules.sql.users_sql as userssql
+import baby.modules.sql.feds_sql as feds_sql
 
-from miley import dispatcher, OWNER_ID, LOGGER, SUDO_USERS, SUPPORT_USERS, DEV_USERS, WHITELIST_USERS, MESSAGE_DUMP
-from miley.modules.helper_funcs.chat_status import user_admin, can_delete, is_user_ban_protected
-from miley.modules.helper_funcs.misc import build_keyboard, revert_buttons, send_to_list
-from miley.modules.helper_funcs.msg_types import get_welcome_type
-from miley.modules.helper_funcs.extraction import extract_user
-from miley.modules.disable import DisableAbleCommandHandler
-from miley.modules.helper_funcs.filters import CustomFilters
-from miley.modules.helper_funcs.string_handling import markdown_parser, escape_invalid_curly_brackets
-from miley.modules.log_channel import loggable
+from baby import dispatcher, OWNER_ID, LOGGER, SUDO_USERS, SUPPORT_USERS, DEV_USERS, WHITELIST_USERS, MESSAGE_DUMP
+from baby.modules.helper_funcs.chat_status import user_admin, can_delete, is_user_ban_protected
+from baby.modules.helper_funcs.misc import build_keyboard, revert_buttons, send_to_list
+from baby.modules.helper_funcs.msg_types import get_welcome_type
+from baby.modules.helper_funcs.extraction import extract_user
+from baby.modules.disable import DisableAbleCommandHandler
+from baby.modules.helper_funcs.filters import CustomFilters
+from baby.modules.helper_funcs.string_handling import markdown_parser, escape_invalid_curly_brackets
+from baby.modules.log_channel import loggable
 
 VALID_WELCOME_FORMATTERS = ['first', 'last', 'fullname', 'username', 'id', 'count', 'chatname', 'mention']
 
