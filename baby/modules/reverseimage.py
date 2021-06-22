@@ -10,9 +10,9 @@ from typing import List
 from telegram import ParseMode, InputMediaPhoto, Update, Bot, TelegramError
 from telegram.ext import run_async
 
-from miley import dispatcher
+from baby import dispatcher
 
-from miley.modules.disable import DisableAbleCommandHandler
+from baby.modules.disable import DisableAbleCommandHandler
 
 
 opener = urllib.request.build_opener()
