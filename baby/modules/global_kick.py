@@ -4,13 +4,13 @@ from typing import List, Optional
 from telegram.error import BadRequest, TelegramError
 from telegram.ext import run_async, CommandHandler, MessageHandler, Filters
 from telegram.utils.helpers import mention_html
-from miley import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, GBAN_LOGS, DEV_USERS
-from miley.modules.helper_funcs.chat_status import user_admin, is_user_admin
-from miley.modules.helper_funcs.extraction import extract_user, extract_user_and_text
-from miley.modules.helper_funcs.filters import CustomFilters
-from miley.modules.helper_funcs.misc import send_to_list
-from miley.modules.sql.users_sql import get_all_chats
-import miley.modules.sql.global_kicks_sql as sql
+from baby import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, GBAN_LOGS, DEV_USERS
+from baby.modules.helper_funcs.chat_status import user_admin, is_user_admin
+from baby.modules.helper_funcs.extraction import extract_user, extract_user_and_text
+from baby.modules.helper_funcs.filters import CustomFilters
+from baby.modules.helper_funcs.misc import send_to_list
+from baby.modules.sql.users_sql import get_all_chats
+import baby.modules.sql.global_kicks_sql as sql
 
 GKICK_ERRORS = {
     "Bots can't add new chat members",
