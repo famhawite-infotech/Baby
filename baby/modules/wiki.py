@@ -7,8 +7,8 @@ from wikipedia.exceptions import DisambiguationError, PageError
 from telegram import Message, Chat, Update, Bot, ParseMode
 from telegram.ext import run_async
 
-from miley import dispatcher
-from miley.modules.disable import DisableAbleCommandHandler
+from baby import dispatcher
+from baby.modules.disable import DisableAbleCommandHandler
 @run_async
 def wiki(bot: Bot, update: Update):
     msg = update.effective_message.reply_to_message if update.effective_message.reply_to_message else update.effective_message
