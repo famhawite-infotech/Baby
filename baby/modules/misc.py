@@ -8,11 +8,11 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async, Filters
 from telegram.utils.helpers import mention_html
 
-from miley import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, DEV_USERS, WHITELIST_USERS
-from miley.__main__ import STATS, USER_INFO, TOKEN
-from miley.modules.disable import DisableAbleCommandHandler
-from miley.modules.helper_funcs.chat_status import user_admin, sudo_plus
-from miley.modules.helper_funcs.extraction import extract_user
+from baby import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, DEV_USERS, WHITELIST_USERS
+from baby.__main__ import STATS, USER_INFO, TOKEN
+from baby.modules.disable import DisableAbleCommandHandler
+from baby.modules.helper_funcs.chat_status import user_admin, sudo_plus
+from baby.modules.helper_funcs.extraction import extract_user
 
 MARKDOWN_HELP = f"""
 Markdown is a very powerful formatting tool supported by telegram. {dispatcher.bot.first_name} has some enhancements, to make sure that \
