@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, Integer, UnicodeText
 
-from miley.modules.sql import SESSION, BASE
+from baby.modules.sql import SESSION, BASE
 
 
 class UserInfo(BASE):
