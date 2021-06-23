@@ -12,7 +12,6 @@ from baby import dispatcher, LOGGER
 from baby.modules.disable import DisableAbleCommandHandler
 from baby.modules.helper_funcs.chat_status import user_admin
 from baby.modules.helper_funcs.extraction import extract_text
-from baby.modules.helper_funcs.filters import CustomFilters
 from baby.modules.helper_funcs.misc import build_keyboard
 from baby.modules.helper_funcs.string_handling import split_quotes, button_markdown_parser
 from baby.modules.sql import cust_filters_sql as sql
