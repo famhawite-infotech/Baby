@@ -19,7 +19,6 @@ from baby import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, DEV_USERS, WHI
 from baby.__main__ import STATS, USER_INFO, TOKEN
 from baby.modules.disable import DisableAbleCommandHandler, DisableAbleRegexHandler
 from baby.modules.helper_funcs.extraction import extract_user
-from baby.modules.helper_funcs.filters import CustomFilters
 import baby.modules.sql.users_sql as sql
 import baby.modules.helper_funcs.cas_api as cas
 
