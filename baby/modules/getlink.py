@@ -5,7 +5,6 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, Filters
 from telegram.ext.dispatcher import run_async
 from baby.modules.helper_funcs.chat_status import bot_admin
-from baby.modules.helper_funcs.filters import CustomFilters
 
 from baby import dispatcher
 import random, re
