@@ -14,7 +14,6 @@ from baby import dispatcher, SUDO_USERS, LOGGER, OWNER_ID
 from baby.modules.disable import DisableAbleCommandHandler
 from baby.modules.helper_funcs.chat_status import can_delete, is_user_admin, user_not_admin, user_admin, \
 		bot_can_delete, is_bot_admin
-from baby.modules.helper_funcs.filters import CustomFilters
 from baby.modules.helper_funcs.misc import split_message
 from baby.modules.warns import warn
 from baby.modules.log_channel import loggable
