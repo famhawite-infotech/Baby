@@ -10,7 +10,6 @@ from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 
 from baby import dispatcher, LYDIA_API, OWNER_ID
 import baby.modules.sql.lydia_sql as sql
-from baby.modules.helper_funcs.filters import CustomFilters
 
 
 CoffeeHouseAPI = API(LYDIA_API)
