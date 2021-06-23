@@ -11,7 +11,6 @@ from baby.modules.helper_funcs.chat_status import bot_admin, user_admin, is_user
     is_user_admin, is_user_in_chat, is_bot_admin
 from baby.modules.helper_funcs.extraction import extract_user_and_text
 from baby.modules.helper_funcs.string_handling import extract_time
-from baby.modules.helper_funcs.filters import CustomFilters
 
 RBAN_ERRORS = {
     "User is an administrator of the chat",
