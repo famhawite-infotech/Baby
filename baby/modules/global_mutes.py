@@ -11,7 +11,6 @@ import baby.modules.sql.global_mutes_sql as sql
 from baby import dispatcher, OWNER_ID, DEV_USERS, SUDO_USERS, SUPPORT_USERS, STRICT_GMUTE, GBAN_LOGS
 from baby.modules.helper_funcs.chat_status import user_admin, is_user_admin
 from baby.modules.helper_funcs.extraction import extract_user, extract_user_and_text
-from baby.modules.helper_funcs.filters import CustomFilters
 from baby.modules.helper_funcs.misc import send_to_list
 from baby.modules.sql.users_sql import get_all_chats
 
