@@ -20,7 +20,6 @@ from baby.modules.helper_funcs.misc import build_keyboard, revert_buttons, send_
 from baby.modules.helper_funcs.msg_types import get_welcome_type
 from baby.modules.helper_funcs.extraction import extract_user
 from baby.modules.disable import DisableAbleCommandHandler
-from baby.modules.helper_funcs.filters import CustomFilters
 from baby.modules.helper_funcs.string_handling import markdown_parser, escape_invalid_curly_brackets
 from baby.modules.log_channel import loggable
 
