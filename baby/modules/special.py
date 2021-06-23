@@ -14,7 +14,6 @@ from baby.modules.helper_funcs.chat_status import is_user_ban_protected, bot_adm
 
 import baby.modules.sql.users_sql as sql
 from baby import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, LOGGER
-from baby.modules.helper_funcs.filters import CustomFilters
 
 USERS_GROUP = 4
 
