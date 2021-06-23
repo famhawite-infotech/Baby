@@ -14,7 +14,6 @@ from baby.modules.disable import DisableAbleCommandHandler
 from baby.modules.helper_funcs.chat_status import (is_user_admin, bot_admin, user_admin_no_reply, user_admin,
                                                      can_restrict)
 from baby.modules.helper_funcs.extraction import extract_text, extract_user_and_text, extract_user
-from baby.modules.helper_funcs.filters import CustomFilters
 from baby.modules.helper_funcs.misc import split_message
 from baby.modules.helper_funcs.string_handling import split_quotes
 from baby.modules.log_channel import loggable
