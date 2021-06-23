@@ -10,7 +10,6 @@ from baby import dispatcher, DEV_USERS, VERSION
 from baby.modules.disable import DisableAbleCommandHandler
 from baby.modules.helper_funcs.chat_status import dev_plus
 import baby.modules.helper_funcs.git_api as git
-from baby.modules.helper_funcs.filters import CustomFilters
 
 def convert(speed):
     return round(int(speed)/1048576, 2)
