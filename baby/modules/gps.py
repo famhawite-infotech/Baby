@@ -14,7 +14,6 @@ from baby import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, WHITELIST_USER
 from baby.__main__ import STATS, USER_INFO
 from baby.modules.disable import DisableAbleCommandHandler
 from baby.modules.helper_funcs.extraction import extract_user
-from baby.modules.helper_funcs.filters import CustomFilters
 
 from geopy.geocoders import Nominatim
 from telegram import Location
